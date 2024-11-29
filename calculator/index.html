@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Supplement Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="input-row">
+            <label for="dogWeight">Hoeveel heeft mijn hond nodig?</label>
+            <div class="input-group">
+                <input type="number" id="dogWeight" placeholder="Gewicht hond in kg" />
+                <button id="calculateButton">Bereken</button>
+            </div>
+        </div>
+        <table class="result-table" style="display: none;">
+            <tr>
+                <th>Dagelijkse behoefte</th>
+                <th>Maandelijkse behoefte</th>
+                <th>Hoe lang 1 pot meegaat</th>
+                <th>Aanbevolen abonnement</th>
+            </tr>
+            <tr>
+                <td id="daily-need"></td>
+                <td id="monthly-need"></td>
+                <td id="pot-days"></td>
+                <td id="subscription-recommendation"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
